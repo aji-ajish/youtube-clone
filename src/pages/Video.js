@@ -61,7 +61,7 @@ export default function Video() {
         dispatch(setUser(null));
       }
     });
-  }, []);
+  }, [dispatch]);
 
   const addComment = async (e) => {
     e.preventDefault();
@@ -213,6 +213,7 @@ export default function Video() {
                 </Link>
               );
             }
+            return null;
           })}
         </div>
       </div>

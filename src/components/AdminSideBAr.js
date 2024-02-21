@@ -1,5 +1,4 @@
 import React from "react";
-import { Md10K } from "react-icons/md";
 import { FcVideoCall, FcVideoFile } from "react-icons/fc";
 import { Link } from "react-router-dom";
 

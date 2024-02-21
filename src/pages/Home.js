@@ -33,7 +33,7 @@ export default function Home() {
         dispatch(setUser(null));
       }
     });
-  }, []);
+  }, [dispatch]);
 
   return (
     <>

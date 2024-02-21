@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import AdminSideBAr from "../components/AdminSideBAr";
-import { useDispatch } from "react-redux";
 import { collection, deleteDoc, doc, onSnapshot, query } from "firebase/firestore";
 import { db } from "../firebase";
 import { Link } from "react-router-dom";
@@ -8,7 +7,6 @@ import { FcEmptyTrash } from "react-icons/fc";
 
 export default function ListVideos() {
   const [videos, setVideos] = useState([]);
-  const dispatch = useDispatch();
 
   useEffect(() => {
     const q = query(collection(db, "videos"));

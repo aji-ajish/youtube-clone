@@ -39,6 +39,7 @@ export default function Home() {
     <>
       <SideBar />
       <div className="w-[calc(100%-240px)] h-screen pt-16 bg-yt-black ml-60">
+        <Link to="/admin/addvideo">Admin</Link>
         <div className="flex flex-row px-3 overflow-x-auto relative scrollbar-hide">
           {CategoryItems.map((item, i) => (
             <h2
